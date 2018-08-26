@@ -6,17 +6,16 @@ var mailFormat=/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,
 function ValidateName()
 {
   var name=document.getElementById("firstname").value;
-    if(name.length ===0)
-    {
-        ErrorDisplayer("* FirstName cannot be empty","firstNameErrorBox");   
-    }
-   else if(!(alphabet.test(name)))
-    {
-         ErrorDisplayer("* Enter Valid Name","firstNameErrorBox"); 
-    }
-     else
-        ErrorDisplayer("","firstNameErrorBox")
-
+  if(name.length ===0)
+  {
+    ErrorDisplayer("* FirstName cannot be empty","firstNameErrorBox");   
+  }
+  else if(!(alphabet.test(name)))
+  {
+    ErrorDisplayer("* Enter Valid Name","firstNameErrorBox"); 
+  }
+  else
+    ErrorDisplayer("","firstNameErrorBox")
 }
 
 //validating lastname
@@ -25,20 +24,18 @@ function ValidateLastName()
    var name=document.getElementById("LastName").value;
    if(name.length === 0)
     {
-        ErrorDisplayer("* FirstName cannot be empty","lastNameErrorBox");    
-        
+      ErrorDisplayer("* FirstName cannot be empty","lastNameErrorBox");    
     } 
     else if(!(alphabet.test(name)))
     {
-         ErrorDisplayer("* Enter Valid Name","lastNameErrorBox"); 
+      ErrorDisplayer("* Enter Valid Name","lastNameErrorBox"); 
     }
     else
-        ErrorDisplayer("","lastNameErrorBox")
+      ErrorDisplayer("","lastNameErrorBox")
 }
 //error handler function for firstname and lastname
 function ErrorDisplayer(message,Location)
-{
-   
+{ 
     document.getElementById(Location).value=message;
     console.log(document.getElementById(Location).innerHTML);
     document.getElementById(Location).style.color="red";
@@ -78,8 +75,7 @@ function ValidateMail()
 //validating city
 function ValidateCity()
 {
-    
-    document.getElementById("CityErrorBox").style.color="red";
+   document.getElementById("CityErrorBox").style.color="red";
     var cities = document.getElementsByName("city");
     if(cities[0].value=="None")
     {
@@ -109,9 +105,7 @@ function finalCheck()
         {
             alert("Enter All required Input")
             return false;
-        }
-        
-    
+        }    
 }
 
 
