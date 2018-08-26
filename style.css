@@ -4,7 +4,6 @@ body{
 }
 .container{
     margin: 0 auto;
-    
     background-color:#8BB9E7;
     padding-top:0px;
 }
@@ -32,7 +31,7 @@ input,textarea,select{
     height: 10px;
 }
 .registerbtn{
-   background-color: #4CAF50;
+    background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
     margin: 8px 10px 20px 200px;
